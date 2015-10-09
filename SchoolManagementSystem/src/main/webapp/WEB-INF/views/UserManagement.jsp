@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page isELIgnored="false" %>
 <html>
   <head>  
     <title>AngularJS $http Example</title>  
@@ -29,6 +30,7 @@
      <link href="<c:url value="/static/css/app.css" />" rel="stylesheet"></link>
   </head>
   <body ng-app="myApp" class="ng-cloak">
+  <p>Dear <strong>${user}</strong></p>
       <div class="generic-container" ng-controller="UserController as ctrl">
           <div class="panel panel-default">
               <div class="panel-heading"><span class="lead">User Registration Form </span></div>

@@ -1,6 +1,7 @@
 package com.chitra.schoolmanagementsystem.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -8,10 +9,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 public class IndexController {
 	
-	@RequestMapping(value={"/","welcome"}, method = RequestMethod.GET)
-	public String welcomePage(){
+	@RequestMapping(value={"/","/home"}, method = RequestMethod.GET)
+	public String welcomePage(Model m){
+		m.addAttribute("message","Welcome to home page!");
 		
-		return "UserManagement";
+		return "welcome";
 	}
 
 }
