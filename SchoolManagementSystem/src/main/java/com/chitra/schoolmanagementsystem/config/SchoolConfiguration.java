@@ -1,6 +1,5 @@
 package com.chitra.schoolmanagementsystem.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -15,8 +14,8 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(basePackages = "com.chitra.schoolmanagementsystem")
 public class SchoolConfiguration extends WebMvcConfigurerAdapter{
 	
-	@Autowired
-	RoleToUserProfileConverter roleToUserProfileConverter;
+	//@Autowired
+	//RoleToUserProfileConverter roleToUserProfileConverter;
 	
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
@@ -32,7 +31,7 @@ public class SchoolConfiguration extends WebMvcConfigurerAdapter{
 	 */
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/static/**").addResourceLocations("/static");
+		 registry.addResourceHandler("/static/**").addResourceLocations("/static/");
 		
 	}
 	

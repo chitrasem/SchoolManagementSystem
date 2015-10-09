@@ -11,7 +11,7 @@ public class IndexController {
 	@RequestMapping(value={"/","welcome"}, method = RequestMethod.GET)
 	public String welcomePage(){
 		
-		return "welcome";
+		return "UserManagement";
 	}
 
 }
