@@ -1,5 +1,11 @@
 package com.chitra.schoolmanagementsystem.dao;
 
-public class UserDao {
+import com.chitra.schoolmanagementsystem.model.User;
 
+public interface UserDao {
+	 
+    User findById(int id);
+     
+    User findBySSO(String sso);
+     
 }

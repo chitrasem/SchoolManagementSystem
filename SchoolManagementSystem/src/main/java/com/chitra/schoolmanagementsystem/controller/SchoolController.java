@@ -18,7 +18,7 @@ public class SchoolController {
 	@RequestMapping(value="/admin", method = RequestMethod.GET)
 	public String adminPage(Model model){
 		model.addAttribute("user", getPrincipal());
-		return "/UserManagement";
+		return "/admin";
 	}
 	
 	@RequestMapping(value="/db", method = RequestMethod.GET)
