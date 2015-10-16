@@ -1,5 +1,5 @@
 package com.chitra.schoolmanagementsystem.service;
 
-public class UserService {
+public class CustomUserDetailsService {
 
 }
